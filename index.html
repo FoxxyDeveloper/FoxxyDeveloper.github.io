@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастомные заголовки</title>
+</head>
+<header>
+</header>
+<body>
+    <div class="rimg">
+        <div class="dimapikmi" onclick='changetitle("@ZBEZDbIU_Bot")'>
+            Юз нашего бота
+        </div>
+        
+        <div class="dimapikmi" onclick='changetitle("Дима пикми фемшашлык")'>
+            Дима пикми фемшашлык
+        </div>
+
+        <div class="dimapikmi" onclick='changetitle("wara wara wara ^www^")'>
+            <font color="#0000FF">Wara wara wara</font>
+        </div>
+
+        <div class="dimapikmi" onclick='changetitle("Женя элитная шлю")'>
+            Женя элитная шлю
+        </div>
+
+        <div class="dimapikmi" onclick='changetitle("Женя нищая шлюха")'>
+            Женя нищая шлюха
+        </div>
+    </div>
+
+    <div class="button" onclick="changetitlebyid('custom')"><input type="text" id="custom" placeholder="Введите свой заголовок..."> Применить</div>
+
+    <script>
+        function changetitle(str) {
+            document.title = str
+        }
+        function changetitlebyid(str) {
+            var value = document.getElementById(str).value
+            if (!value) {
+                document.title = "Кастомные заголовки"
+                return
+            }
+            document.title = document.getElementById(str).value
+        }
+    </script>
+
+    <style>
+        .dimapikmi{
+            background-color: #555555;
+            background-blend-mode: luminosity;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 5px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05),
+            inset 5px 5px 20px rgba(0, 0, 0, 0.1);
+            stroke: black;
+            stroke-width: 10px;
+            stroke-opacity: 100%;
+            font-family: 'Geologica';
+            font-size: 32px;
+            transition: all 0.25s ease-in-out;
+            width:auto;
+        }
+        .dimapikmi:hover{
+            border-radius: 15px;
+            background-color: #666666;
+        }
+        .rimg{
+            border-radius: 15px;
+            stroke: #414141;
+            stroke-width: 1px;
+            stroke-opacity: 70;
+            background-color: #313131;
+            padding: 5px;
+            padding-bottom: 0.1px;
+            width: fit-content;
+        }
+
+        header{
+            background:rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            align-content: center;
+        }
+
+        .button{
+            background-color: #5d33c7;
+            border-radius: 5px;
+            border: 0;
+            outline: none;
+            color: white;
+            font-size: medium;
+            padding: 5px;
+            transition: all 0.25s ease-in-out;
+            font-family: Arial, Helvetica, sans-serif;
+            width:fit-content;
+        }
+        .button:hover{
+            background-color: #794ee5;
+            border-radius: 7px;
+        }
+        input{
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        body{
+            background-color: #414141;
+        }
+        a{
+            text-decoration: none;
+            color: black
+        }
+    </style>
+</body>
+<footer>
+
+</footer>
